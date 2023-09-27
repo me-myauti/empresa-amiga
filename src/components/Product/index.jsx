@@ -1,10 +1,13 @@
 import { Plus } from "@phosphor-icons/react";
+import { useCart } from "../Context/CartContext";
 
 export default function Product({ name, description, price, icon }) {
   const formatNumber = price.toLocaleString("pt-br", {
     style: "currency",
     currency: "BRL",
   });
+
+  const { addItemToCart } = useCart();
 
   return (
     <div className="mt-4 flex flex-col">
@@ -64,7 +67,7 @@ export default function Product({ name, description, price, icon }) {
           </div>
         </div>
 
-        <button className="add-cart h-10 w-10 ">
+        <button className="add-cart h-10 w-10 " onClick={addItemToCart}>
             <Plus size={24} />
           </button>
       </div>

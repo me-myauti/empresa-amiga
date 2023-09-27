@@ -2,7 +2,6 @@ import Product from "../Product";
 import PASTEL from "../../variables/pastel";
 import LANCHE from "../../variables/lanche";
 import BEBIDA from "../../variables/bebida";
-import { Hamburger, BeerBottle} from "@phosphor-icons/react";
 
 export default function Menu() {
   return (
