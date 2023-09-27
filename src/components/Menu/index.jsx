@@ -4,7 +4,6 @@ import LANCHE from "../../variables/lanche";
 import BEBIDA from "../../variables/bebida";
 import { Hamburger, BeerBottle} from "@phosphor-icons/react";
 
-
 export default function Menu() {
   return (
     <main className="mt-10">
@@ -18,7 +17,7 @@ export default function Menu() {
                 name={product.nome}
                 description={product.descricao}
                 price={product.preco}
-                icon={<Hamburger size={32}/>}
+                icon={<img src={`/src/assets/lanches/${product.nome}.${product.icon}`} alt={product.nome} className="w-16 h-16"/>}
               />
           ))}
         </div>
@@ -33,7 +32,7 @@ export default function Menu() {
                 name={product.nome}
                 description={product.descricao}
                 price={product.preco}
-                icon={<Hamburger size={32}/>}
+                icon={<img src={`/src/assets/pasteis/${product.nome}.${product.icon}`} alt={product.nome} className="w-16 h-16"/>}
               />
           ))}
        
@@ -49,7 +48,7 @@ export default function Menu() {
                 name={product.nome}
                 description={product.descricao}
                 price={product.preco}
-                icon={<BeerBottle size={32}/>}
+                icon={<img src={`/src/assets/bebidas/${product.nome}.${product.icon}`} alt={product.nome} className="w-16 h-16"/>}
               />
           ))}
         </div>
