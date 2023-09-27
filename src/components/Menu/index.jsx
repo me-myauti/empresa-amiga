@@ -32,7 +32,7 @@ export default function Menu() {
                 name={product.nome}
                 description={product.descricao}
                 price={product.preco}
-                icon={<Hamburger />}
+                icon={<Hamburger className="w-16 h-16"/>}
               />
           ))}
        
@@ -48,7 +48,7 @@ export default function Menu() {
                 name={product.nome}
                 description={product.descricao}
                 price={product.preco}
-                icon={<BeerBottle />}
+                icon={<BeerBottle className="w-16 h-16"/>}
               />
           ))}
         </div>
