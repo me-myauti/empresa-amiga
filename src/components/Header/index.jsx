@@ -1,5 +1,6 @@
 import { ShoppingCart } from "@phosphor-icons/react";
 import { useCart } from "../Context/CartContext";
+import { Hamburger } from "@phosphor-icons/react";
 
 export default function Header() {
 
@@ -8,7 +9,7 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between  w-full mx-auto max-w-[900px]   pt-4 pb-6 border-b border-gray-300">
       <div className="flex items-center justify-center gap-2">
-        <img src="/src/assets/logo.jpeg" alt="Senhor do Pastel" className="w-16 h-16" />
+        <img src="/src/assets/logo.jpeg" className="w-16 h-16" />
         <h2 className=" text-[18px] md:text-[24px] font-medium " >Senhor Do Pastel</h2>
       </div>
 
