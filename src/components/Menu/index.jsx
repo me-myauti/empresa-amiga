@@ -14,6 +14,7 @@ export default function Menu() {
           {LANCHE.map((product)=>(
               <Product 
                 key={product.id}
+                id={product.id}
                 name={product.nome}
                 description={product.descricao}
                 price={product.preco}
@@ -29,6 +30,7 @@ export default function Menu() {
           {PASTEL.map((product)=>(
               <Product 
                 key={product.id}
+                id={product.id}
                 name={product.nome}
                 description={product.descricao}
                 price={product.preco}
@@ -45,6 +47,7 @@ export default function Menu() {
           {BEBIDA.map((product)=>(
               <Product 
                 key={product.id}
+                id={product.id}
                 name={product.nome}
                 description={product.descricao}
                 price={product.preco}
